@@ -1,0 +1,41 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.todo {
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.error{
+  color: red;
+  font-size: 24px;
+}
+
+.todo.completed span {
+  text-decoration: line-through;
+}
+
+.todo label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.todo i {
+  cursor: pointer;
+  z-index: 2;
+}
+[type="checkbox"]+span:not(.lever){
+  word-wrap: break-word;
+  height: 100%;
+  max-width: 90%;
+}
+
